@@ -3,11 +3,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid #FFF;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+li > a {
+  text-decoration: none;
+  color: lightgrey;
 }
 
 .wrapper {
@@ -15,6 +19,60 @@ body {
   height: 100vh;
   background-color: #000;
 }
+
+/* TOP NAVBAR */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 15%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  padding: 5px;
+  width: 100%;
+  height: 10vh;
+}
+
+.upgrade {
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upgrade > a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  font-size: 0.9em;
+}
+
+.upgrade > a:hover {
+  border: 1px solid rgb(29, 185, 84);
+  color: rgb(29, 185, 84);
+}
+
+/* LEFT NAVBAR */
+
+
+
+
+
+
+
+
 
 
 .player {
