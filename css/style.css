@@ -1,0 +1,24 @@
+/* Regole CSS generali */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #FFF;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+
+.player {
+  height: 100px;
+  width: 100%;
+  background-color: pink;
+}
