@@ -212,6 +212,8 @@ li > a {
 
 .main-content {
   margin-top: 84px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* UPGRADE */
@@ -241,6 +243,106 @@ li > a {
   border: 1px solid rgb(29, 185, 84);
   color: rgb(29, 185, 84);
 }
+
+/* MAIN CONTENT */
+.main-content {
+  margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MENU */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu ul > li {
+  margin: 10px;
+}
+
+.menu a {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.menu a:hover {
+  color: #FFF;
+}
+
+#active {
+  border-bottom: 3px solid rgb(29, 185, 84);
+}
+
+/* COVERS */
+.covers {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.covers h2 {
+  color: #FFF;
+  margin-bottom: 30px;
+}
+
+.covers ul {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.covers img {
+  width: 100%;
+}
+
+.covers h4 {
+  text-align: center;
+  color: #FFF;
+  margin: 20px 0;
+}
+
+.covers p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cover-item {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: calc(100% / 6 - 15px);
+}
+
+.container-relative {
+  position: relative;
+}
+
+.cover-layover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover-item:hover .cover-layover {
+  display: block;
+  cursor: pointer;
+}
+
+.cover-layover i {
+  font-size: 3em;
+  color: #FFF;
+  margin: 75px auto;
+}
+
+
 
 /* FOOTER */
 footer {
