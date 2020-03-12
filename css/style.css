@@ -19,81 +19,228 @@ li > a {
   color: lightgrey;
 }
 
-.wrapper {
+#wrapper {
   width: 100%;
+  height: 100%;
   background-color: #000;
-}
-
-
-/* HEADER */
-#navbar {
-  /* DEBUG */
-  height: 90px;
-  background-color: red;
-  /* end DEBUG */
-  width: 100%;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.logo {
-  /* DEBUG */
-  height: 90px;
-  background-color: green;
-  /* end DEBUG */
-  width: 15%;
-  padding: 15px;
-}
-
-.upgrade {
-  /* DEBUG */
-  height: 90px;
-  background-color: blue;
-  /* end DEBUG */
-  width: 85%;
-  padding: 15px;
 }
 
 
 /* MAIN */
 
-.clearfix {
-  /* DEBUG */
-  height: calc(100vh - 180px);
-  background-color: yellow;
-  /* end DEBUG */
-  margin-top: 90px;
+#clearfix {
+  height: calc(100vh - 90px);
   width: 100%;
 }
 
-.clearfix::after {
+#clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
 .left-navbar {
-  /* DEBUG */
-  height: calc(100vh - 180px);
-  background-color: pink;
-  /* end DEBUG */
-  width: 15%;
+  height: calc(100vh - 90px);
+  width: 200px;
   float: left;
+}
+
+.container-groups {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100%;
   padding: 15px;
 }
+
+/* HOME */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.home img {
+  width: 20px;
+  height: auto;
+}
+
+.home li {
+  margin: 10px 0;
+}
+
+.home a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+}
+
+.home a:hover {
+  color: #FFF;
+}
+
+#selected a {
+  color: #FFF;
+}
+
+#selected {
+  border-left: 3px solid rgb(29, 185, 84);
+  margin-left: -15px;
+  padding-left: 15px;
+}
+
+/* PLAYLIST */
+.playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.playlist h3 {
+  color: #FFF;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.name-playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overflow {
+  margin-top: 20px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.overflow a:hover {
+  color: #FFF;
+}
+
+.name-playlist li {
+  margin-top: 15px;
+  height: 30px;
+}
+
+.name-playlist a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+}
+
+#create-playlist {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  background-color: #000;
+}
+
+#create-playlist a > span {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3px 12px;
+  color: #000;
+  font-size: 2em;
+}
+
+#create-playlist a:hover {
+  color: #FFF;
+}
+
+#create-playlist a:hover span {
+  background-color: #FFF;
+}
+
+/* ACCOUNTs */
+.account {
+  padding: 15px;
+}
+
+.download-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 15px 0;
+}
+
+.download-app img {
+  height: 17px;
+  width: auto;
+  padding-top: 5px;
+}
+
+.download-app a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.download-app a:hover {
+  color: #FFF;
+}
+
+.user {
+  padding: 15px 0;
+}
+
+.user img {
+  height: 17px;
+  width: auto;
+  margin: 0 5px;
+}
+
+.user h2 {
+  color: #FFF;
+  display: inline-block;
+  font-size: 1em;
+}
+/* CARDS */
 
 .cards {
-  /* DEBUG */
-  background-color: orange;
-  height: calc(100vh - 180px);
-  /* end DEBUG */
-  width: 85%;
+  height: calc(100vh - 90px);
+  width: calc(100% - 200px);
   float: left;
-  padding: 15px;
+  background-color: #141922;
 }
 
+.main-content {
+  margin-top: 84px;
+}
+
+/* UPGRADE */
+.upgrade {
+  height: 84px;
+  width: calc(100% - 200px);
+  position: fixed;
+  top: 0;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upgrade > a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  font-size: 0.9em;
+}
+
+.upgrade > a:hover {
+  border: 1px solid rgb(29, 185, 84);
+  color: rgb(29, 185, 84);
+}
 
 /* FOOTER */
 footer {
