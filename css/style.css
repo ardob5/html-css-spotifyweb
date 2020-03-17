@@ -229,6 +229,7 @@ li > a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 999;
 }
 
 .upgrade > a {
@@ -387,14 +388,17 @@ li > a {
 footer {
   /* DEBUG */
   height: 90px;
-  background-color: purple;
+  background-color: #302f2f;
   /* end DEBUG */
   width: 100%;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.player {
-  width: 25%;
+.album {
+  width: 15%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -430,7 +434,7 @@ footer {
 
 .player-icon i {
   color: rgba(255, 255, 255, 0.5);
-  margin-left: 5px;
+  margin: 5px;
 }
 
 .player-icon i:hover {
@@ -440,4 +444,75 @@ footer {
 
 #heart {
   color: #FFF;
+}
+
+.controller {
+  width: 40%;
+}
+
+.controller ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-item {
+  color: #FFF;
+  margin: 0 5px;
+}
+
+.icon-item:hover {
+  cursor: pointer;
+}
+
+#player-circle {
+  font-size: 30px;s
+}
+
+.midbar-player {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-bar {
+  height: 5px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.player-bar:hover {
+  cursor: pointer;
+}
+
+.controller-time {
+  margin: 0 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #FFF;
+}
+
+.audo-player {
+  width: 15%;
+}
+
+.audio-player ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul .audiobar {
+  width: 100px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.selected-bar {
+  height: 5px;
+  width: 30%;
+  color: #FFF;
+  z-index: 999;
 }
