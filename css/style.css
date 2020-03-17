@@ -204,10 +204,11 @@ li > a {
 /* CARDS */
 
 .cards {
-  height: calc(100vh - 90px);
+  max-height: calc(100vh - 90px);
   width: calc(100% - 200px);
   float: left;
   background-color: #141922;
+  overflow-y: scroll;
 }
 
 .main-content {
@@ -342,6 +343,44 @@ li > a {
   margin: 75px auto;
 }
 
+/* SUGGESTED */
+.suggested {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.suggested h2 {
+  color: #FFF;
+  margin-bottom: 30px;
+}
+
+.suggested ul {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.suggested img {
+  width: 100%;
+}
+
+.suggested img {
+  width: 100%;
+}
+
+.suggested h4 {
+  text-align: center;
+  color: #FFF;
+  margin: 20px 0;
+}
+
+.suggested p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
 
 /* FOOTER */
@@ -352,4 +391,53 @@ footer {
   /* end DEBUG */
   width: 100%;
   padding: 15px;
+}
+
+.player {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.player-album {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-album img {
+  width: 50px;
+  height: auto;
+}
+
+.album-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.album-text h3 {
+  font-size: 0.9em;
+  color: #FFF;
+}
+
+.album-text p {
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.player-icon i {
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 5px;
+}
+
+.player-icon i:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+#heart {
+  color: #FFF;
 }
